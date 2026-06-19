@@ -96,7 +96,7 @@ section { margin-bottom: 4rem; }
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   object-fit: cover;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 2 / 3;
   border: 6px solid #fff;
 }
 
