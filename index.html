@@ -7,14 +7,20 @@
   <meta name="description" content="One-on-one tutoring for elementary-aged students in Tampa, FL with Carly Ravitz, a USF Elementary Education student." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,wght@0,400;0,600;0,700;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="grain" aria-hidden="true"></div>
+
   <header class="site-header">
-    <a class="brand" href="#top">Carly Ravitz <span>Tutoring</span></a>
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">✦</span>
+      Carly Ravitz <span class="brand-tag">Tutoring</span>
+    </a>
     <nav aria-label="Primary">
       <a href="#about">About</a>
+      <a href="#method">The Ravitz Way</a>
       <a href="#services">Services</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -23,23 +29,44 @@
   <main id="top">
     <section class="hero">
       <div class="hero-text">
-        <p class="eyebrow">Tampa, FL · USF Student</p>
-        <h1>Patient, playful tutoring for elementary learners.</h1>
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Tampa, FL · USF Class of '27</p>
+        <h1>
+          Patient, playful tutoring for
+          <span class="underline-wrap">
+            elementary
+            <svg class="squiggle" viewBox="0 0 220 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9 C 30 0, 60 14, 90 7 S 150 0, 180 9 S 210 4, 218 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+          </span>
+          learners.
+        </h1>
         <p class="lede">
           Hi! I'm Carly — a Junior at the University of South Florida studying Elementary Education. I help kids build confidence in reading, writing, and math through one-on-one sessions tailored to how they learn best.
         </p>
         <div class="cta-row">
           <a class="btn btn-primary" href="#contact">Book a Session</a>
-          <a class="btn btn-ghost" href="#about">Meet Carly</a>
+          <a class="btn btn-ghost" href="#method">See My Method</a>
         </div>
+        <p class="hero-handwritten" aria-hidden="true">…snacks included.</p>
       </div>
       <div class="hero-photo">
+        <span class="badge badge-star" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 10l-5.5 4.8L18 22l-6-3.6L6 22l1.5-7.2L2 10l7.1-1.1z"/></svg>
+          5-Star
+        </span>
+        <span class="badge badge-bull" aria-hidden="true">Go Bulls 🐂</span>
         <img src="carly.jpg" alt="Carly Ravitz writing on a classroom whiteboard while a student looks on" width="320" height="480" />
       </div>
     </section>
 
+    <section class="stats" aria-label="By the numbers">
+      <div><strong>K–5</strong><span>grade levels</span></div>
+      <div><strong>3+</strong><span>years with kids</span></div>
+      <div><strong>∞</strong><span>goldfish consumed</span></div>
+      <div><strong>1</strong><span>future teacher in the making</span></div>
+    </section>
+
     <section id="about" class="card">
-      <h2>About Carly</h2>
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>About</p>
+      <h2>Meet Carly</h2>
       <p>
         I'm a 21-year-old Elementary Education major at USF with years of experience working with children of all ages — from babysitting to classroom support. I believe every kid learns differently, and my job is to find the angle that finally makes it click.
       </p>
@@ -48,14 +75,15 @@
         <li>Grades K–5</li>
         <li>Reading · Writing · Math</li>
         <li>In-person &amp; Virtual</li>
+        <li>NY ↔ Tampa</li>
       </ul>
     </section>
 
     <section id="method" class="method">
-      <p class="eyebrow">A Signature Approach</p>
-      <h2>The Ravitz Way™</h2>
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>A Signature Approach</p>
+      <h2>The Ravitz Way<sup class="tm">™</sup></h2>
       <p class="method-lede">
-        After years in classrooms (and a few too many late-night study sessions), I developed my own teaching philosophy. I call it <strong>The Ravitz Way</strong> — and yes, it's trademarked in my heart.
+        After years in classrooms (and a few too many late-night study sessions), I developed my own teaching philosophy. I call it <em>The Ravitz Way</em> — and yes, it's trademarked in my heart.
       </p>
       <div class="method-grid">
         <div>
@@ -77,28 +105,75 @@
     </section>
 
     <section id="services" class="services">
-      <h2>What I Offer</h2>
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>What I Offer</p>
+      <h2>Subjects &amp; Support</h2>
       <div class="service-grid">
         <article>
+          <span class="service-icon" aria-hidden="true">📖</span>
           <h3>Reading &amp; Phonics</h3>
           <p>Decoding, fluency, and comprehension for early and developing readers.</p>
         </article>
         <article>
+          <span class="service-icon" aria-hidden="true">✏️</span>
           <h3>Writing</h3>
           <p>Sentence structure, paragraph building, and creative writing support.</p>
         </article>
         <article>
+          <span class="service-icon" aria-hidden="true">🧮</span>
           <h3>Elementary Math</h3>
           <p>Number sense, fractions, and word problems made approachable.</p>
         </article>
         <article>
+          <span class="service-icon" aria-hidden="true">🎒</span>
           <h3>Homework Help</h3>
           <p>After-school support to keep your child on track and confident.</p>
         </article>
       </div>
     </section>
 
+    <section class="testimonials" aria-label="Kind words">
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Kind Words</p>
+      <h2>What people are saying<sup class="tm">*</sup></h2>
+      <div class="quote-grid">
+        <blockquote>
+          <p>"Miss Carly said I'm a math wizard now. I'm a math wizard now."</p>
+          <footer>— A very confident 3rd grader</footer>
+        </blockquote>
+        <blockquote>
+          <p>"She got my kid excited about reading. I didn't know that was legal."</p>
+          <footer>— Tampa mom</footer>
+        </blockquote>
+        <blockquote>
+          <p>"The Ravitz Way™ is real. My report card has feelings now."</p>
+          <footer>— Recovering 5th grader</footer>
+        </blockquote>
+      </div>
+      <p class="disclaimer"><sup>*</sup> Quotes lovingly fictionalized. Real results, real Goldfish.</p>
+    </section>
+
+    <section class="faq" aria-label="Frequently asked questions">
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>FAQ</p>
+      <h2>Good Questions</h2>
+      <details>
+        <summary>What ages do you tutor?</summary>
+        <p>Grades K through 5, with a soft spot for the early-reader years.</p>
+      </details>
+      <details>
+        <summary>In-person or virtual?</summary>
+        <p>Both! I'm based in Tampa during the school year and on Long Island over breaks. Virtual sessions run year-round.</p>
+      </details>
+      <details>
+        <summary>How long is a session?</summary>
+        <p>45–60 minutes is the sweet spot for elementary attention spans (mine included).</p>
+      </details>
+      <details>
+        <summary>Do you offer a trial?</summary>
+        <p>Yes — a free 15-minute meet-and-greet so your kid and I can vibe-check before booking.</p>
+      </details>
+    </section>
+
     <section id="contact" class="contact">
+      <p class="eyebrow handwritten">P.S. — let's chat!</p>
       <h2>Let's Get Started</h2>
       <p>Reach out to set up a free 15-minute meet-and-greet. I'll learn about your child and we'll find a time that works.</p>
       <a class="btn btn-primary" href="mailto:carly.ravitz@example.com?subject=Tutoring%20Inquiry">Email Carly</a>
@@ -106,7 +181,7 @@
   </main>
 
   <footer>
-    <p>&copy; <span id="year">2026</span> Carly Ravitz Tutoring · Tampa, FL</p>
+    <p>&copy; <span id="year">2026</span> Carly Ravitz Tutoring · Tampa, FL · Made with <span aria-label="love">♡</span></p>
   </footer>
 
   <script>
