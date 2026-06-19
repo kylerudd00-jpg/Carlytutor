@@ -177,6 +177,43 @@ section { margin-bottom: 4rem; }
 .service-grid h3 { color: var(--accent-deep); margin-bottom: 0.4em; }
 .service-grid p { margin: 0; font-size: 0.95rem; }
 
+/* The Ravitz Way */
+.method {
+  text-align: center;
+  padding: clamp(1.5rem, 4vw, 2.5rem) 0;
+}
+.method .eyebrow { display: block; }
+.method-lede { max-width: 52ch; margin: 0 auto 2rem; font-size: 1.05rem; }
+.method-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  text-align: left;
+}
+.method-grid > div {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem 1.5rem;
+  position: relative;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.method-grid > div:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+.step-num {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--accent);
+  font-style: italic;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+.method-grid h3 { color: var(--ink); margin-bottom: 0.3em; }
+.method-grid p { margin: 0; font-size: 0.95rem; }
+
 /* Contact */
 .contact {
   text-align: center;
